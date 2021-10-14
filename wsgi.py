@@ -1,7 +1,6 @@
 from flask import Flask, abort, redirect
 from flask import render_template, request
 from link_db import LinksDB
-from jinja2 import FileSystemLoader, Environment
 
 links = LinksDB()  # создание глобального хранилища
 app = Flask(__name__)  # создание объекта веб-приложения
